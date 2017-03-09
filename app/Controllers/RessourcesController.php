@@ -69,7 +69,6 @@ class RessourcesController
         $cat->execute();
         $category = $cat->fetchAll();
 
-
         $this->container->view->render($response, 'pages/list.twig', ["ressources" => $result, "name" => $category_name, "categories" => $category]);
 
     }
